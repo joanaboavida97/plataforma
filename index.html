@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plataforma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+  </head>
+  <body>
+      
+      <!-- navbar----->
+      <nav class="navbar is-primary">
+      <div class="navbar-brand">
+        <a class="navbar-item" href=#>
+          <img src="logo_sa.png" alt="ShiftAppens" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Dashboard
+          </a>
+          
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#section-candidatura">Candidatura</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#section-candidatura">Nova candidatura</a>
+                        <a class="navbar-item" href="#section-candidatura">Editar candidatura</a>
+                </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">Shifters</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">Ver Shifters</a>
+                        <a class="navbar-item" href="#">Equipas</a>
+                            <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">Criar equipa</a>
+                </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">Edição 2018</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">FAQs</a>
+                        <a class="navbar-item" href="#">Programa</a>
+                            <a class="navbar-item" href="#">Parcerias</a>
+                                <a class="navbar-item" href="#">Juris</a>
+                </div> 
+        </div>
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">Perfil</a>
+          
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                            
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>    
+  </body>
+    
+      
+      
+  <main> 
+      
+    <!--secção candidatura---->  
+      <div class="section section-large section-candidatura id=section-candidatura">
+            <div class="container">
+                <div class="tabs is-fullwidth has-text-weight-bold">
+                    <ul>
+                        <li>
+                            <a href="#passo1">
+                                <span class="icon"><i class="fa fa-angle-left"></i></span>
+                                    <span>Bio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-angle-up"></i></span>
+                                <span>Skills + Pitch</span>
+        
+                            </a>
+        
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Extras</span>
+                                <span class="icon"><i class="fa fa-angle-right"></i></span>
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+       
+      <!--inputs---->
+            <div class="container">
+              <div class="columns">
+                <div class="column" id="coluna1">
+                    <div><br></div>
+                    <div><h2>PASSO 1 - Confirma os teus dados</h2></div>
+                    <div><br></div>
+                    <div><br></div>
+                    <div class="control">
+                        <input class="input is-small" type="text" placeholder="Nome">
+                    </div>
+                    <div><br></div>
+                    <div class="control">
+                    <input class="input is-small" type="text" placeholder="Idade">
+                    </div>
+                    <div><br></div>
+                    <input class="input is-small" type="text" placeholder="Localidade">
+                </div>
+            
+                <div class="column" id="coluna2">
+                    <div><br></div>
+                    <div><br></div>
+                    <div><p>Bio *</p>
+                        <div><br></div>
+                        <textarea class="textarea" placeholder="Fala-nos um pouco mais sobre ti"></textarea>
+                    </div>
+                </div>
+              </div>
+              </div>
+
+            <div class="container"> 
+                <div><br></div>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary">
+                        <select>
+                            <div><br></div>
+                            <option>Função</option>
+                            <option>Developer</option>
+                            <option>Designer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div>
+                <div class="content" id="teste">
+                    <div><br></div>
+                    <h5>Estudante * </h5>
+            </div>
+            <div>
+                <label class="checkbox"><input type="checkbox">  Sim   </label>
+                <label class="checkbox"><input type="checkbox">  Não</label>
+            </div>
+            </div>
+        </div>
+
+
+      
+    
+
+  </main>
+</html>

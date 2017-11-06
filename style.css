@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1.5rem;
+
+    
+}
+
+.section-large {
+    min-height: 100vh;
+}
+
+body {
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-shrink: 0;
+    max-width: 100vw;
+    min-height: 3.25rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.navbar {
+    font-weight: 400;
+}
+
