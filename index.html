@@ -57,9 +57,9 @@
         </div>
         <div class="navbar-start">
             <a class="navbar-item" href="#">Perfil</a>
-          
-        <div>
-            <span class="icon is-large"><i class="fa fa-sign-out"></i></span>
+            
+        <div class="has-text-aligned-right">
+            <span class="icon is-large"><i class="fa fa-sign-out fa fa-2x"></i></span>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -82,25 +82,73 @@
       <div class="section section-large section-dashboard" id="section-dashboard">
         <div class="section left section-text">
           <h1 class="title is-3">Countdown</h1>
-          <span class="margin-24"></span>
-          <p class="subtitle is-5">teste</p>
-          <h1 class="title is-3">Desafios</h1>
-            <div>
-                <a class="button is-black">Desafio1</a>
-                <a class="button is-black">Desafio2</a>
-            </div>
-            <div>
-                <a class="button is-black">Desafio3</a>
-                <a class="button is-black">Desafio4</a>
-                
-            </div>
-        </div>
-        
-    </div> 
-      
-      
-      
+            <h1 class="title is-3 has-text-weight-light" id="contdowndinamica"></h1>
 
+                <script>
+                //countdown dinamica para os dias do evento
+                // Set the date we're counting down to
+                var countDownDate = new Date("Feb 15, 2018 15:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                    // Get todays date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("contdowndinamica").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("contdowndinamica").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+                </script>
+            
+            <!--notificacao countdown para acabar o evento---->
+            <div class="container">        
+                <div class="columns">
+                    <div class="column has-text-aligned-left">
+                        <div class="notification">
+                            <button class="delete"></button>
+                            <strong>Atenção Shifter!</strong><p class="has-text-weight-normal">Faltam dd hh mm ss para o hackathon acabar!</p> 
+                        </div>
+                        </div>
+                        <div class="column has-text-aligned-left"></div>
+                </div>
+            </div>
+                    
+           <!--desafios dashboard----->         
+          <h1 class="title is-3">Desafios</h1>
+            <div class="container">        
+                <div class="columns">
+                    <div class="column has-text-aligned-left">
+                        <a class="button button-dashboard is-black">Desafio1</a>
+                        <a class="button button-dashboard is-black">Desafio2</a>
+                        <a class="button button-dashboard is-black">Desafio3</a>
+                        <a class="button button-dashboard is-black">Desafio4</a>
+                    </div>
+                    <div class="column has-text-aligned-left">
+                        <a class="button button-dashboard is-black">Desafio5</a>
+                        <a class="button button-dashboard is-black">Desafio6</a>
+                        <a class="button button-dashboard is-black">Desafio7</a>
+                        <a class="button button-dashboard is-black">Desafio8</a>
+                    </div>
+                    <div class="column is-four-fifths"></div>
+                </div>
+        
+            </div> 
         </div>
 
 
