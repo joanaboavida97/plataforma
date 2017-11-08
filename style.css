@@ -36,3 +36,52 @@ body {
     font-weight: 400;
 }
 
+h1 {
+    font-weight: 700;
+}
+
+.margin-24 {
+    margin-bottom: 24px;
+}
+
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.button {
+    margin-right: 20%;
+    margin-bottom: 20%;
+}
+
+#section-dashboard {
+    background-image: url("dashboard_background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+
+.section-registo {
+    background-image: url("fundo2.png");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 100%;
+    display: flex;
+}
+
+.input {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.icon {
+    margin-top: 1%;
+}
+
+
+
+
+
+
