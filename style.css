@@ -50,11 +50,6 @@ span {
     font-weight: inherit;
 }
 
-.button {
-    margin-right: 20%;
-    margin-bottom: 20%;
-}
-
 #section-dashboard {
     background-image: url("dashboard_background.png");
     background-repeat: no-repeat;
@@ -62,13 +57,16 @@ span {
     
 }
 
-
 .section-registo {
-    background-image: url("fundo2.png");
+    background-image: url("gradiente_autenticacao.png");
     background-repeat: no-repeat;
     background-size: auto auto;
     width: 100%;
     display: flex;
+}
+
+.button-registar{
+    margin-bottom: 10%;
 }
 
 .input {
@@ -76,9 +74,15 @@ span {
     margin-top: 1%;
 }
 
+#input4 {
+    margin-bottom: 5%;
+}
+
 .icon {
     margin-top: 1%;
 }
+
+
 
 
 
