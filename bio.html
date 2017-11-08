@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plataforma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+  </head>
+  <body>
+      
+      <!-- navbar----->
+      <nav class="navbar is-primary">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="logo_sa.png" alt="ShiftAppens" width="112" height="28">
+        </a>
+
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Dashboard
+          </a>
+          
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#section-candidatura">Candidatura</a>
+                <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#section-candidatura">Editar candidatura</a>
+                </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">Shifters</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">Ver Shifters</a>
+                        <a class="navbar-item" href="#">Equipas</a>
+                            <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">Criar equipa</a>
+                </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">Edição 2018</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">FAQs</a>
+                        <a class="navbar-item" href="#">Programa</a>
+                            <a class="navbar-item" href="#">Parcerias</a>
+                                <a class="navbar-item" href="#">Juris</a>
+                </div> 
+        </div>
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">Perfil</a>
+          
+        <div>
+            <span class="icon is-large"><i class="fa fa-sign-out"></i></span>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                            
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>    
+  </body>
+    
+      
+      
+  <main> 
+  
+      
+      
+      
+    <!--secção candidatura---->  
+      <div class="section section-large section-candidatura" id="section-candidatura">
+            <div class="container">
+                <div class="tabs is-fullwidth has-text-weight-bold">
+                    <ul>
+                        <li class="is-active">
+                            <a href="bio.html">
+                                <span class="icon"><i class="fa fa-angle-left"></i></span>
+                                    <span>Bio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="skillspitch.html">
+                                <span class="icon"><i class="fa fa-angle-up"></i></span>
+                                <span>Skills + Pitch</span>
+        
+                            </a>
+        
+                        </li>
+                        <li>
+                            <a href="extras.html">
+                                <span>Extras</span>
+                                <span class="icon"><i class="fa fa-angle-right"></i></span>
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+       
+   <!--inputs---->
+            <div class="container">
+              <div class="columns">
+                <div class="column" id="coluna1">
+                    <div><br></div>
+                    <div><h2 class="title is-6">PASSO 1 - Confirma os teus dados</h2></div>
+                    <div><br></div>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Nome">
+                    </div>
+                    
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Idade">
+                    </div>
+                    
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Localidade">
+                    </div>
+                    <div class="container"> 
+                    <div><br></div>
+                        <div class="field">
+                             <div class="content">
+                                <p>Função: *</p>
+                            </div>
+                            <div class="control">
+                                <div class="select is-primary">
+                                    <select>
+                                        <div><br></div>
+                                        <option>Developer</option>
+                                        <option>Designer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div>
+                            <div class="content" id="teste">
+                            <div><br></div>
+                            <p>Estudante: *</p>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="question"> Sim</label>
+                                    <label class="radio">
+                                        <input type="radio" name="question"> Não</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+                <div class="column" id="coluna2">
+                    <div><br></div>
+                    <div><br></div>
+                    <div><p>Bio: *</p>
+                        <div><br></div>
+                        <textarea class="textarea" placeholder="Fala-nos um pouco mais sobre ti"></textarea>
+                    </div>
+                </div>
+              </div>
+              </div>
+
+            
+        </div>
+
+
+      
+    
+
+  </main>
+</html>
