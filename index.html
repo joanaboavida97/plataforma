@@ -27,7 +27,7 @@
 
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#">
+          <a class="navbar-item" href="index.html">
             Dashboard
           </a>
           
@@ -56,7 +56,7 @@
                 </div> 
         </div>
         <div class="navbar-start">
-            <a class="navbar-item" href="#">Perfil</a>
+            <a class="navbar-item" href="meuPerfil.html">Perfil</a>
             
         <div class="has-text-aligned-right">
             <span class="icon is-large"><i class="fa fa-sign-out fa fa-2x"></i></span>
@@ -82,9 +82,50 @@
       <div class="section section-large section-dashboard" id="section-dashboard">
         <div class="section left section-text">
           <h1 class="title is-3">Countdown</h1>
-            <h1 class="title is-3 has-text-weight-light" id="contdowndinamica"></h1>
+            <div class="container">
+                    <h1 class="title is-3 has-text-weight-light" id="contdowndinamica"></h1><img src="icon_countdown.png" id="icon-countdown">
+            </div>
+            
+            <!--notificacao countdown para acabar o evento---->
+            <div class="container">        
+                <div class="columns">
+                    <div class="column has-text-aligned-left">
+                        <article class="message is-primary">
+                                <div class="message-body">
+                                    <p><strong>Atenção Shifter!</strong></p><p class="has-text-weigh-normal"> Faltam dd hh mm ss para o hackathon acabar</p>
+                                </div>
+                        </article>
 
-                <script>
+                        </div>
+                        <div class="column has-text-aligned-left"></div>
+                </div>
+            </div>
+                    
+           <!--desafios dashboard----->         
+          <h1 class="title is-3">Desafios</h1>
+            <div class="container">        
+                <div class="columns">
+                    <div class="column has-text-aligned-left">
+                        <a class="button button-dashboard is-black">Desafio1</a>
+                        <a class="button button-dashboard is-black">Desafio2</a>
+                        <a class="button button-dashboard is-black">Desafio3</a>
+                        <a class="button button-dashboard is-black">Desafio4</a>
+                    </div>
+                    <div class="column has-text-aligned-left">
+                        <a class="button button-dashboard is-black">Desafio5</a>
+                        <a class="button button-dashboard is-black">Desafio6</a>
+                        <a class="button button-dashboard is-black">Desafio7</a>
+                        <a class="button button-dashboard is-black">Desafio8</a>
+                    </div>
+                    <div class="column is-four-fifths"></div>
+                </div>
+        
+            </div> 
+        </div>
+
+
+      
+    <script>
                 //countdown dinamica para os dias do evento
                 // Set the date we're counting down to
                 var countDownDate = new Date("Feb 15, 2018 15:37:25").getTime();
@@ -115,45 +156,6 @@
                     }
                 }, 1000);
                 </script>
-            
-            <!--notificacao countdown para acabar o evento---->
-            <div class="container">        
-                <div class="columns">
-                    <div class="column has-text-aligned-left">
-                        <div class="notification">
-                            <button class="delete"></button>
-                            <strong>Atenção Shifter!</strong><p class="has-text-weight-normal">Faltam dd hh mm ss para o hackathon acabar!</p> 
-                        </div>
-                        </div>
-                        <div class="column has-text-aligned-left"></div>
-                </div>
-            </div>
-                    
-           <!--desafios dashboard----->         
-          <h1 class="title is-3">Desafios</h1>
-            <div class="container">        
-                <div class="columns">
-                    <div class="column has-text-aligned-left">
-                        <a class="button button-dashboard is-black">Desafio1</a>
-                        <a class="button button-dashboard is-black">Desafio2</a>
-                        <a class="button button-dashboard is-black">Desafio3</a>
-                        <a class="button button-dashboard is-black">Desafio4</a>
-                    </div>
-                    <div class="column has-text-aligned-left">
-                        <a class="button button-dashboard is-black">Desafio5</a>
-                        <a class="button button-dashboard is-black">Desafio6</a>
-                        <a class="button button-dashboard is-black">Desafio7</a>
-                        <a class="button button-dashboard is-black">Desafio8</a>
-                    </div>
-                    <div class="column is-four-fifths"></div>
-                </div>
-        
-            </div> 
-        </div>
-
-
-      
-    
 
   </main>
 </html>
