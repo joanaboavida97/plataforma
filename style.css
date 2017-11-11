@@ -83,11 +83,18 @@ span {
     margin-top: 1%;
 }
 
-.button-dashboard, .notification {
+.button-dashboard, .message {
     margin-bottom: 4%;
 }
 
+#icon-countdown {
+    float: right;
+    margin-left: 5%;
+}
 
+#inputNome {
+    margin-top: 14%;
+}
 
 
 
